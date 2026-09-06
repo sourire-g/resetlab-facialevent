@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ラボ フェイシャルイベント｜細胞から若返る、究極のエイジングケア体験会</title>
+  <meta name="description" content="30代からの肌悩みに。細胞に着目した本格エイジングケア「セルサーケア」体験会。2026年9月18日（金）・19日（土）開催、2日間16名限定。ご予約は各店舗の公式LINEから。">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .lp {
+      font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+      color: #3B2F23;
+      background: #FBF7F0;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .lp h1, .lp h2, .lp h3 { font-family: "Shippori Mincho", "Hiragino Mincho ProN", serif; margin: 0; }
+    .lp a { color: inherit; text-decoration: none; }
+    .lp p { margin: 0; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: 108px 0; }
+    .section-alt { background: #F4EBDA; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 12px; letter-spacing: 0.28em; color: #9C7B3F;
+      font-weight: 600;
+    }
+    .eyebrow::before, .eyebrow::after { content: ""; width: 20px; height: 1px; background: #C7A25B; }
+    .h2 { font-size: 34px; font-weight: 600; color: #372B1F; letter-spacing: 0.02em; }
+    .h2-sub { margin-top: 18px; font-size: 15px; color: #6B5D4D; font-weight: 400; line-height: 2; }
+    .center { text-align: center; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(120deg, #C6A15A, #A9803B);
+      color: #FBF7F0; font-size: 15px; font-weight: 600; letter-spacing: 0.06em;
+      padding: 18px 40px; border-radius: 2px; border: 1px solid #A9803B;
+      box-shadow: 0 10px 24px rgba(150, 116, 55, 0.28);
+    }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: #7A5C2E; font-size: 14px; font-weight: 600;
+      letter-spacing: 0.04em; padding: 16px 34px; border-radius: 2px; border: 1px solid #C7A25B;
+    }
+    .cta-block { text-align: center; padding: 88px 0; background: #FBF7F0; }
+    .cta-block.alt { background: #372B1F; }
+    .cta-block.alt .cta-title { color: #F3E7CE; }
+    .cta-block.alt .cta-note { color: #C9B98F; }
+    .cta-title { font-family: "Shippori Mincho", serif; font-size: 24px; color: #372B1F; margin-bottom: 10px; }
+    .cta-note { font-size: 13px; color: #6B5D4D; margin-bottom: 28px; letter-spacing: 0.02em; }
+
+    /* Hero */
+    .hero { position: relative; padding: 64px 0 0; background: linear-gradient(180deg, #FDFAF3 0%, #F6EDDD 100%); }
+    .hero-top { max-width: 1080px; margin: 0 auto; padding: 0 32px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-family: "Shippori Mincho", serif; font-size: 20px; letter-spacing: 0.3em; color: #4A3B2A; }
+    .brand-en { font-size: 10px; letter-spacing: 0.2em; color: #A48E63; margin-top: 2px; }
+    .hero-inner { max-width: 1080px; margin: 56px auto 0; padding: 0 32px 0; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+    .hero-copy .eyebrow { margin-bottom: 22px; }
+    .hero-copy .lead { font-size: 14px; color: #6B5D4D; margin-bottom: 18px; letter-spacing: 0.02em; }
+    .hero-copy h1 { font-size: 44px; line-height: 1.5; color: #372B1F; font-weight: 700; }
+    .hero-copy .sub { margin-top: 26px; font-size: 15px; color: #5B4C3A; line-height: 2.1; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+    .badge { border: 1px solid #C7A25B; color: #7A5C2E; font-size: 13px; letter-spacing: 0.04em; padding: 9px 18px; border-radius: 999px; background: rgba(255,255,255,0.5); }
+    .badge.strong { background: #372B1F; border-color: #372B1F; color: #F3E7CE; font-weight: 600; }
+    .hero-copy .btn-primary { margin-top: 38px; }
+    .hero-photo { position: relative; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: linear-gradient(160deg, #EFE1C4, #CBAE84); display: flex; align-items: center; justify-content: center; }
+    .photo-ph { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: rgba(74,59,42,0.62); text-align: center; padding: 24px; }
+    .photo-ph .cap { font-size: 12.5px; letter-spacing: 0.04em; line-height: 1.8; max-width: 220px; }
+    .hero-bottom-line { height: 1px; background: linear-gradient(90deg, transparent, #C7A25B, transparent); margin-top: 68px; }
+
+    /* worries */
+    .worry-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #E1D2AF; }
+    .worry-item { padding: 30px 22px; border-bottom: 1px solid #E1D2AF; border-right: 1px solid #E1D2AF; display: flex; gap: 16px; align-items: flex-start; }
+    .worry-item:nth-child(3n) { border-right: none; }
+    .worry-num { font-family: "Shippori Mincho", serif; font-size: 22px; color: #C7A25B; min-width: 34px; }
+    .worry-text { font-size: 15px; color: #3B2F23; padding-top: 3px; }
+    .worry-note { margin-top: 56px; text-align: center; }
+    .worry-note p { font-size: 15px; color: #5B4C3A; margin-bottom: 10px; }
+    .worry-note p.strong { font-size: 17px; color: #372B1F; font-weight: 600; }
+
+    /* concept */
+    .concept-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .concept-photo { aspect-ratio: 5/4; border-radius: 4px; background: linear-gradient(150deg, #E7D6B0, #C6A876); }
+    .concept-text p { font-size: 15px; color: #4A3B2A; margin-bottom: 20px; }
+    .concept-text .em { color: #8A6A30; font-weight: 600; }
+
+    /* cellsar about */
+    .about-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: center; }
+    .about-photo { aspect-ratio: 4/3; border-radius: 4px; background: linear-gradient(140deg, #F1E4C8, #D3B888); }
+    .about-text p { font-size: 15px; color: #4A3B2A; margin-bottom: 18px; }
+    .note-box { margin-top: 24px; padding: 18px 20px; border: 1px solid #C7A25B; font-size: 12.5px; color: #7A5C2E; line-height: 1.9; background: rgba(199,162,91,0.06); }
+
+    /* points */
+    .points-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .point-card { background: #FFFEFB; border: 1px solid #E5D6B4; border-top: 2px solid #C7A25B; padding: 40px 30px; }
+    .point-num { font-family: "Shippori Mincho", serif; font-size: 34px; color: #D8BD86; margin-bottom: 18px; }
+    .point-title { font-size: 18px; font-weight: 600; color: #372B1F; margin-bottom: 16px; font-family: "Shippori Mincho", serif; }
+    .point-body { font-size: 13.5px; color: #5B4C3A; line-height: 2; }
+
+    /* flow */
+    .flow-list { margin-top: 60px; }
+    .flow-step { display: grid; grid-template-columns: 90px 1fr 260px; gap: 36px; padding: 40px 0; border-bottom: 1px solid #E1D2AF; align-items: center; }
+    .flow-step:first-child { padding-top: 0; }
+    .step-num { font-family: "Shippori Mincho", serif; font-size: 40px; color: #C7A25B; }
+    .step-title { font-size: 19px; font-weight: 600; color: #372B1F; margin-bottom: 12px; font-family: "Shippori Mincho", serif; }
+    .step-title .tag { display: inline-block; font-family: "Noto Sans JP", sans-serif; font-size: 11px; background: #372B1F; color: #F3E7CE; padding: 3px 10px; border-radius: 999px; margin-left: 12px; letter-spacing: 0.04em; vertical-align: middle; }
+    .step-desc { font-size: 14px; color: #5B4C3A; }
+    .step-photo { aspect-ratio: 4/3; border-radius: 4px; background: linear-gradient(150deg, #EEDFBF, #CBAE80); }
+    .step-photo .photo-ph { padding: 12px; }
+    .step-photo .photo-ph .cap { font-size: 11px; max-width: 180px; }
+    .sub-options { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .sub-opt { border: 1px solid #E1D2AF; padding: 14px 16px; font-size: 12.5px; color: #5B4C3A; }
+    .sub-opt .label { display: block; font-weight: 700; color: #8A6A30; margin-bottom: 6px; font-size: 12.5px; }
+
+    /* glow pack */
+    .glow-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+    .glow-text p { font-size: 14.5px; color: #4A3B2A; margin-bottom: 18px; }
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .gallery .photo-ph .cap { font-size: 11px; max-width: 150px; }
+    .gallery-item { aspect-ratio: 1/1; border-radius: 4px; background: linear-gradient(150deg, #EFE1C4, #C6A876); }
+    .disclosure { margin-top: 20px; font-size: 11.5px; color: #9C8B6F; line-height: 1.8; }
+
+    /* value */
+    .value-list { margin-top: 44px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    .value-chip { border: 1px solid #C7A25B; color: #7A5C2E; font-size: 13.5px; padding: 12px 22px; border-radius: 999px; }
+    .value-note { max-width: 640px; margin: 44px auto 0; text-align: center; }
+    .value-note p { font-size: 15px; color: #4A3B2A; margin-bottom: 14px; }
+    .value-note p.strong { font-size: 18px; color: #372B1F; font-weight: 600; font-family: "Shippori Mincho", serif; }
+
+    /* limited */
+    .limited-banner { text-align: center; background: #372B1F; color: #F3E7CE; padding: 30px; margin-top: 48px; letter-spacing: 0.04em; }
+    .limited-banner .big { font-family: "Shippori Mincho", serif; font-size: 24px; }
+    .schedule-grid { margin-top: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .day-card { border: 1px solid #E1D2AF; background: #FFFEFB; padding: 34px; }
+    .day-card .date { font-family: "Shippori Mincho", serif; font-size: 22px; color: #372B1F; margin-bottom: 4px; }
+    .day-card .weekday { font-size: 12px; color: #9C7B3F; letter-spacing: 0.1em; margin-bottom: 20px; }
+    .time-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-top: 1px solid #EEE2C8; font-size: 14px; color: #4A3B2A; }
+    .time-row:first-of-type { border-top: none; }
+    .time-row .cap-tag { font-size: 11.5px; color: #9C7B3F; }
+    .limited-caption { text-align: center; margin-top: 30px; font-size: 13.5px; color: #6B5D4D; }
+
+    /* reserve */
+    .reserve-steps { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .rstep { text-align: center; padding: 0 12px; }
+    .rstep .rnum { width: 46px; height: 46px; border: 1px solid #C7A25B; border-radius: 999px; display: flex; align-items: center; justify-content: center; font-family: "Shippori Mincho", serif; font-size: 18px; color: #8A6A30; margin: 0 auto 20px; }
+    .rstep .rtitle { font-size: 15.5px; font-weight: 600; color: #372B1F; margin-bottom: 10px; }
+    .rstep .rdesc { font-size: 13px; color: #5B4C3A; }
+    .example-box { max-width: 460px; margin: 48px auto 0; background: #F4EBDA; border: 1px solid #E1D2AF; padding: 26px 30px; font-size: 13.5px; color: #4A3B2A; line-height: 2.1; }
+    .example-box .ex-title { font-size: 12px; color: #9C7B3F; letter-spacing: 0.06em; margin-bottom: 10px; }
+
+    /* final */
+    .final { background: linear-gradient(180deg, #372B1F, #2A2013); color: #F3E7CE; text-align: center; padding: 120px 0; }
+    .final .eyebrow { color: #D8BD86; }
+    .final .eyebrow::before, .final .eyebrow::after { background: #8A6A30; }
+    .final h2 { font-size: 30px; color: #FBF3E1; margin-top: 22px; }
+    .final .sub { margin-top: 16px; font-size: 15px; color: #D8C7A1; }
+    .final .tags { margin-top: 40px; font-size: 14px; color: #C9B98F; line-height: 2.4; }
+    .final .buttons { margin-top: 44px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .final .btn-secondary { border-color: #8A6A30; color: #E6D5AC; }
+
+    footer.lp-footer { background: #2A2013; color: #A9976F; text-align: center; padding: 40px 0 120px; font-size: 11.5px; line-height: 2; }
+    footer.lp-footer .fbrand { font-family: "Shippori Mincho", serif; font-size: 15px; letter-spacing: 0.3em; color: #D8C7A1; margin-bottom: 14px; }
+
+    .sticky-cta { display: none; }
+
+    @media (max-width: 860px) {
+      .section { padding: 72px 0; }
+      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+      .hero-copy h1 { font-size: 32px; }
+      .worry-grid { grid-template-columns: repeat(1, 1fr); }
+      .worry-item { border-right: none !important; }
+      .concept-inner, .about-inner, .glow-inner { grid-template-columns: 1fr; gap: 32px; }
+      .points-grid { grid-template-columns: 1fr; }
+      .flow-step { grid-template-columns: 1fr; gap: 18px; }
+      .step-num { font-size: 28px; }
+      .sub-options { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .schedule-grid { grid-template-columns: 1fr; }
+      .reserve-steps { grid-template-columns: 1fr; gap: 34px; }
+      .h2 { font-size: 26px; }
+      body { padding-bottom: 76px; }
+      .sticky-cta {
+        display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        background: rgba(55,43,31,0.96); padding: 12px 18px; justify-content: center;
+        border-top: 1px solid #8A6A30;
+      }
+      .sticky-cta a {
+        width: 100%; max-width: 420px; text-align: center; justify-content: center;
+        background: linear-gradient(120deg, #C6A15A, #A9803B); color: #FBF7F0;
+        padding: 14px 20px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; border-radius: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="lp">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div>
+        <div class="brand">ラボ</div>
+        <div class="brand-en">LABO ESTHETIC SALON</div>
+      </div>
+      <div class="brand-en">2026.9.18 FRI - 9.19 SAT</div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">LABO FACIAL EVENT</span>
+        <p class="lead">30代からの肌悩みに。細胞に着目した本格エイジングケア。</p>
+        <h1>細胞から若返る、<br>究極のエイジングケア体験会。</h1>
+        <p class="sub">何をしても変わらない肌に。<br>今度は、"肌の表面"ではなく"肌の土台"に着目したケアを。</p>
+        <div class="badges">
+          <span class="badge strong">9/18（金）・19（土）</span>
+          <span class="badge">2日間限定</span>
+          <span class="badge">16名限定</span>
+        </div>
+        <div>
+          <a class="btn-primary" href="#reserve">限定16名｜体験会を予約する</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ph">
+          <span class="cap">Photo：透明感のある肌の30〜40代女性の横顔<br>高級エステサロンの施術室・柔らかい光</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrap"><div class="hero-bottom-line"></div></div>
+  </div>
+
+  <!-- WORRIES -->
+  <div class="section">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">WORRIES</span>
+        <h2 class="h2" style="margin-top: 20px;">こんなお悩み、ありませんか？</h2>
+      </div>
+      <div class="worry-grid">
+        <div class="worry-item"><span class="worry-num">01</span><span class="worry-text">毛穴の開き、ざらつきが気になる</span></div>
+        <div class="worry-item"><span class="worry-num">02</span><span class="worry-text">肌のくすみが気になる</span></div>
+        <div class="worry-item"><span class="worry-num">03</span><span class="worry-text">ニキビ跡が気になる</span></div>
+        <div class="worry-item"><span class="worry-num">04</span><span class="worry-text">乾燥による小じわが気になる</span></div>
+        <div class="worry-item"><span class="worry-num">05</span><span class="worry-text">ハリ、弾力の低下が気になる</span></div>
+        <div class="worry-item"><span class="worry-num">06</span><span class="worry-text">シミが気になる</span></div>
+      </div>
+      <div class="worry-note">
+        <p class="strong">年齢とともに、肌悩みはひとつではなくなっていきます。</p>
+        <p>化粧水や美容液を変えても、以前ほど手応えを感じない。<br>そんな"大人の肌の変化"に着目したフェイシャルケアです。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT -->
+  <div class="section section-alt">
+    <div class="wrap">
+      <div class="concept-inner">
+        <div class="concept-photo">
+          <div class="photo-ph"><span class="cap">Photo：カウンセリングの様子<br>スタッフと会話する女性</span></div>
+        </div>
+        <div class="concept-text">
+          <span class="eyebrow">CONCEPT</span>
+          <h2 class="h2" style="margin-top: 20px; margin-bottom: 26px;">表面的なケアから、<br>"肌の土台"を考えるケアへ。</h2>
+          <p>年齢を重ねると、毛穴、くすみ、乾燥、ハリ不足など、さまざまな肌悩みが重なって現れます。</p>
+          <p>だからこそ今回の体験会では、ただ美容成分を与えるだけではなく、<br>「肌のコンディションを整えること」「肌本来の働きに着目すること」を大切にしたケアを体験していただきます。</p>
+          <p>今回の主役は、<span class="em">細胞に着目した美容機器「セルサーケア」</span>。<br>いつものホームケアでは体験できない、一歩進んだエイジングケアをぜひご体感ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CELLSAR ABOUT -->
+  <div class="section">
+    <div class="wrap">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="eyebrow">ABOUT CELLSAR CARE</span>
+          <h2 class="h2" style="margin-top: 20px; margin-bottom: 26px;">再生医療の現場から着想を得た、<br>美容機器「セルサーケア」。</h2>
+          <p>「セルサーケア」は、皮膚の状態に着目した再生医療分野の研究をルーツに、美容目的でお使いいただけるよう新たに開発された美容機器です。</p>
+          <p>その考え方を美容分野へと応用し、エステティックサロンでご案内できる機器として仕上げられました。</p>
+          <div class="note-box">
+            「セルサーケア」は医療機器ではなく、エステティックサロンでご案内する美容目的の機器です。医療行為ではありませんので、あらかじめご了承ください。
+          </div>
+        </div>
+        <div class="about-photo">
+          <div class="photo-ph"><span class="cap">Photo：セルサーケア機器のクローズアップ<br>清潔感のある施術室</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POINTS -->
+  <div class="section section-alt">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">WHY CELLSAR CARE</span>
+        <h2 class="h2" style="margin-top: 20px;">なぜ、セルサーケアなの？</h2>
+      </div>
+      <div class="points-grid">
+        <div class="point-card">
+          <div class="point-num">01</div>
+          <div class="point-title">お肌の状態に合わせたケア</div>
+          <div class="point-body">特殊な交流電流を利用し、普段のお手入れではアプローチしにくい肌の層に着目。お客様のお肌悩みに合わせて4種類の電流から最適なものを選択し、一人ひとりのお肌に合わせたケアを行います。</div>
+        </div>
+        <div class="point-card">
+          <div class="point-num">02</div>
+          <div class="point-title">美容液導入を同時に</div>
+          <div class="point-body">特殊な交流電流を使用しながら、お肌のお悩みに合わせた高濃度美容液を使用。電気刺激によるケアと美容液によるケアを組み合わせることで、より効率的なトリートメントを目指します。</div>
+        </div>
+        <div class="point-card">
+          <div class="point-num">03</div>
+          <div class="point-title">ダウンタイムへの配慮</div>
+          <div class="point-body">施術中の痛みが少なく、施術後の赤みなどのダウンタイムにも配慮したケア。美容医療に興味はあるけれど、ダウンタイムが気になる方にもおすすめの美容ケアです。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <div class="cta-title">セルサーケアを、まずは体験会で。</div>
+    <div class="cta-note">今回限定の特別な体験を、ぜひこの機会に。</div>
+    <a class="btn-primary" href="#reserve">限定16名｜体験会を予約する</a>
+  </div>
+
+  <!-- FLOW -->
+  <div class="section section-alt">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">FACIAL FLOW</span>
+        <h2 class="h2" style="margin-top: 20px;">約100分。あなたのお肌と向き合う、<br>特別なフェイシャル体験。</h2>
+      </div>
+
+      <div class="flow-list">
+        <div class="flow-step">
+          <div class="step-num">01</div>
+          <div>
+            <div class="step-title">カウンセリング</div>
+            <div class="step-desc">お客様のお肌悩みや普段のお手入れについて丁寧にお伺いします。</div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：カウンセリングシート</span></div></div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-num">02</div>
+          <div>
+            <div class="step-title">クレンジング</div>
+            <div class="step-desc">お客様のお肌状態に合わせたクレンジングで、丁寧にお肌を整えます。</div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：クレンジングシーン</span></div></div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-num">03</div>
+          <div>
+            <div class="step-title">お肌悩み別ディープクレンジング</div>
+            <div class="step-desc">以下3種類から、お肌のお悩みに合わせて1つを選択します。</div>
+            <div class="sub-options">
+              <div class="sub-opt"><span class="label">A：エレクトロクレンジング</span>特殊な電気を使用し、お肌を柔らかく整えながら汚れを取り除き、透明感のある肌へ導きます。</div>
+              <div class="sub-opt"><span class="label">B：超音波スクライバー洗浄</span>1秒間に25,000回の超音波振動を利用し、毛穴の汚れや古い角質を浮かせて、優しく取り除きます。</div>
+              <div class="sub-opt"><span class="label">C：毛穴吸引</span>専用機器を使用し、毛穴に詰まった皮脂や汚れを丁寧に除去します。</div>
+            </div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：ディープクレンジング施術</span></div></div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-num">04</div>
+          <div>
+            <div class="step-title">セルサーマスクケア<span class="tag">MAIN</span></div>
+            <div class="step-desc">特殊な交流電流を利用し、肌の深い層に着目したケア。肌本来のコンディションを整え、年齢肌のさまざまな悩みにアプローチします。</div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：セルサーマスクケア施術（メインカット）</span></div></div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-num">05</div>
+          <div>
+            <div class="step-title">エニシーグローパック</div>
+            <div class="step-desc">炭酸ガスを利用した人気の炭酸パック。セルサーケアの後に行うことで、仕上げまでこだわったスペシャルケアを体験していただきます。ハリ・ツヤのある、いきいきとした印象の肌へ。</div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：炭酸パック塗布シーン</span></div></div>
+        </div>
+
+        <div class="flow-step" style="border-bottom: none;">
+          <div class="step-num">06</div>
+          <div>
+            <div class="step-title">アフターカウンセリング</div>
+            <div class="step-desc">施術後のお肌を一緒に確認しながら、ホームケアについてアドバイス。アフターティーを楽しみながら、ゆっくりお過ごしいただきます。</div>
+          </div>
+          <div class="step-photo"><div class="photo-ph"><span class="cap">Photo：アフターティータイム</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <div class="cta-title">その日のお肌に合わせて、丁寧に。</div>
+    <div class="cta-note">カウンセリングからアフターケアまで、約100分のスペシャル体験。</div>
+    <a class="btn-primary" href="#reserve">限定16名｜体験会を予約する</a>
+  </div>
+
+  <!-- GLOW PACK -->
+  <div class="section section-alt">
+    <div class="wrap">
+      <div class="glow-inner">
+        <div class="glow-text">
+          <span class="eyebrow">SPECIAL FINISH</span>
+          <h2 class="h2" style="margin-top: 20px; margin-bottom: 10px;">最後の仕上げは、<br>話題の"エニシーグローパック"。</h2>
+          <p class="h2-sub" style="margin-bottom: 26px;">美容好きの間で話題の炭酸ガスパックを、今回の体験会で。</p>
+          <p>SNSや美容業界でも注目されている「エニシーグローパック」。美容に関心の高い女性を中心に知られている炭酸ガスパックで、特別な日の前のスペシャルケアとして取り入れられることも多いアイテムです。</p>
+          <p>撮影前のモデルや美容関係者の間でも取り入れられることの多いケアとして知られ、「大切な予定の前に、肌のコンディションを整えたい」という女性からも注目されています。</p>
+          <p>今回のイベントでは、セルサーケアだけではなく、仕上げにエニシーグローパックまで体験。「肌を整える」だけで終わらない、ラボならではのスペシャルフェイシャルです。</p>
+          <div class="disclosure">※著名人・モデル等の使用実績を掲載する場合は、掲載許諾・出典・事実確認が取れた情報のみを使用します。</div>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item"><div class="photo-ph"><span class="cap">Photo：エニシーグローパック使用シーン</span></div></div>
+          <div class="gallery-item"><div class="photo-ph"><span class="cap">Photo：炭酸パック開封カット</span></div></div>
+          <div class="gallery-item"><div class="photo-ph"><span class="cap">Photo：仕上がりの肌</span></div></div>
+          <div class="gallery-item"><div class="photo-ph"><span class="cap">Photo：サロン内観</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <div class="cta-title">仕上げまでこだわる、スペシャルフェイシャルを。</div>
+    <div class="cta-note">セルサーケア＋エニシーグローパックが体験できるのは、この2日間だけ。</div>
+    <a class="btn-primary" href="#reserve">限定16名｜体験会を予約する</a>
+  </div>
+
+  <!-- VALUE -->
+  <div class="section">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">SPECIAL EXPERIENCE</span>
+        <h2 class="h2" style="margin-top: 20px;">"いつものフェイシャル"では<br>物足りない方へ。</h2>
+      </div>
+      <div class="value-list">
+        <span class="value-chip">肌悩みの丁寧なカウンセリング</span>
+        <span class="value-chip">お肌に合わせたディープクレンジング</span>
+        <span class="value-chip">セルサーケア</span>
+        <span class="value-chip">美容液ケア</span>
+        <span class="value-chip">エニシーグローパック</span>
+        <span class="value-chip">アフターカウンセリング</span>
+      </div>
+      <div class="value-note">
+        <p>これらすべてを、約100分かけて行う、スペシャルなエイジングケア体験。</p>
+        <p class="strong">「最近、肌が変わってきた」<br>そう感じ始めた30代以降の女性にこそ、<br>一度体験していただきたいフェイシャルです。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIMITED -->
+  <div class="section section-alt">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">LIMITED EDITION</span>
+        <h2 class="h2" style="margin-top: 20px;">2日間・16名だけの特別体験。</h2>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="day-card">
+          <div class="date">9月18日</div>
+          <div class="weekday">FRIDAY</div>
+          <div class="time-row"><span>10:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>12:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>14:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>16:00〜</span><span class="cap-tag">2名限定</span></div>
+        </div>
+        <div class="day-card">
+          <div class="date">9月19日</div>
+          <div class="weekday">SATURDAY</div>
+          <div class="time-row"><span>10:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>12:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>14:00〜</span><span class="cap-tag">2名限定</span></div>
+          <div class="time-row"><span>16:00〜</span><span class="cap-tag">2名限定</span></div>
+        </div>
+      </div>
+
+      <div class="limited-banner">
+        <div class="big">2日間合計16名限定</div>
+      </div>
+      <p class="limited-caption">各時間2名限定のため、ご希望のお時間がある方はお早めにご連絡ください。</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <div class="cta-title">枠には限りがございます。</div>
+    <div class="cta-note">ご希望のお時間がある方は、お早めのご予約をおすすめします。</div>
+    <a class="btn-primary" href="#reserve">限定16名｜体験会を予約する</a>
+  </div>
+
+  <!-- RESERVE -->
+  <div class="section section-alt" id="reserve">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">HOW TO BOOK</span>
+        <h2 class="h2" style="margin-top: 20px;">ご予約は公式LINEから</h2>
+      </div>
+
+      <div class="reserve-steps">
+        <div class="rstep">
+          <div class="rnum">1</div>
+          <div class="rtitle">各店舗の公式LINEを開く</div>
+          <div class="rdesc">お手持ちのスマートフォンから、各店舗の公式LINEアカウントを開いてください。</div>
+        </div>
+        <div class="rstep">
+          <div class="rnum">2</div>
+          <div class="rtitle">「フェイシャルイベント予約希望」と送信</div>
+          <div class="rdesc">トーク画面から、その旨をメッセージでお送りください。</div>
+        </div>
+        <div class="rstep">
+          <div class="rnum">3</div>
+          <div class="rtitle">希望日時を第3希望まで送信</div>
+          <div class="rdesc">ご希望の日時を、第一希望から第三希望までお知らせください。</div>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <div class="ex-title">送信例</div>
+        <div>第一希望：9月18日 10:00</div>
+        <div>第二希望：9月18日 12:00</div>
+        <div>第三希望：9月19日 14:00</div>
+      </div>
+
+      <p class="center" style="margin-top: 26px; font-size: 13px; color: #6B5D4D;">店舗側より、ご予約可能なお時間をご返信いたします。</p>
+
+      <div class="center" style="margin-top: 44px;">
+        <a class="btn-primary" href="#reserve">公式LINEから予約する</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL -->
+  <div class="final">
+    <div class="wrap">
+      <span class="eyebrow">LABO FACIAL EVENT</span>
+      <h2>肌の変化を感じ始めた今だからこそ。</h2>
+      <p class="sub">一度、いつものお手入れを見直してみませんか？</p>
+      <div class="tags">
+        細胞に着目した、究極のエイジングケア体験。<br>
+        9月18日・19日限定｜2日間16名限定
+      </div>
+      <div class="buttons">
+        <a class="btn-primary" href="#reserve">フェイシャル体験会を予約する</a>
+        <a class="btn-secondary" href="#reserve">公式LINEから第3希望まで送る</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="lp-footer">
+    <div class="wrap">
+      <div class="fbrand">LABO</div>
+      <div>ご予約・お問い合わせは、各店舗の公式LINEまでお願いいたします。</div>
+      <div>※本ページで紹介するケアは医療行為ではなく、美容目的の施術です。効果には個人差があります。</div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="#reserve">限定16名｜体験会を予約する</a>
+  </div>
+
+</div>
+</body>
+</html>
